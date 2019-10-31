@@ -64,7 +64,7 @@ void menu()
 
 	}
 }
-void pausa()
+    void pausa()
 {
 	cout << endl << "Pausa cualquier tecla";
 	getwchar();
@@ -92,6 +92,32 @@ int resta()
 	cin >> b;
 	resta = a - b;
 	cout << "La resta es: " << resta;
+	pausa();
+	return 0;
+
+}
+int multi()
+{
+	int a, b, multi;
+	cout << "Primer valor: ";
+	cin >> a;
+	cout << "Segundo valor";
+	cin >> b;
+	multi = a * b;
+	cout << "La multiplicacion es: " << multi;
+	pausa();
+	return 0;
+
+}
+int division()
+{
+	int a, b, division;
+	cout << "Primer valor: ";
+	cin >> a;
+	cout << "Segundo valor";
+	cin >> b;
+	division = a / b;
+	cout << "La division es: " << division;
 	pausa();
 	return 0;
 
